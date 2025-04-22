@@ -1,11 +1,18 @@
 :root {
-    --color-bg: #0b3d91;         /* Azul espacial oscuro */
-    --color-brand: #005f73;      /* Verde petróleo */
-    --color-white: #ffffff;      /* Blanco puro para texto */
-    --color-accent: #ee9b00;     /* Naranja solar para llamadas a la acción */
-    --color-neutral: #f5f5f5;    /* Fondo claro para secciones */
-    --color-link: #00b4d8;       /* Azul brillante para enlaces o hover */
-    --color-detail: #7c3aed;     /* Morado decorativo para detalles o botones secundarios */
+    --color-bg: #0b3d91;
+    /* Azul espacial oscuro */
+    --color-brand: #005f73;
+    /* Verde petróleo */
+    --color-white: #ffffff;
+    /* Blanco puro para texto */
+    --color-accent: #ee9b00;
+    /* Naranja solar para llamadas a la acción */
+    --color-neutral: #f5f5f5;
+    /* Fondo claro para secciones */
+    --color-link: #00b4d8;
+    /* Azul brillante para enlaces o hover */
+    --color-detail: #7c3aed;
+    /* Morado decorativo para detalles o botones secundarios */
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 }
@@ -32,9 +39,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
-        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px);
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 4px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 2px);
     background-size: 550px 550px, 350px 350px;
     background-position: 0 0, 40px 60px;
     z-index: -1;
@@ -156,11 +163,13 @@ nav a::after {
     transition: width 0.3s;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
     color: var(--color-accent);
 }
 
-nav a:hover::after, nav a:focus::after {
+nav a:hover::after,
+nav a:focus::after {
     width: 100%;
 }
 
@@ -237,14 +246,16 @@ nav a:hover::after, nav a:focus::after {
     margin-left: 1rem;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: var(--color-white);
     border-color: var(--color-white);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn-secondary:hover, .btn-secondary:focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background-color: var(--color-white);
     color: var(--color-bg);
     transform: translateY(-3px);
@@ -311,7 +322,8 @@ nav a:hover::after, nav a:focus::after {
     flex-direction: column;
 }
 
-.exhibition-card:hover, .exhibition-card:focus-within {
+.exhibition-card:hover,
+.exhibition-card:focus-within {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -376,7 +388,8 @@ nav a:hover::after, nav a:focus::after {
     margin-top: 1rem;
 }
 
-.schedule-table th, .schedule-table td {
+.schedule-table th,
+.schedule-table td {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -579,7 +592,8 @@ footer {
     transition: opacity 0.3s;
 }
 
-.footer-links a:hover, .footer-links a:focus {
+.footer-links a:hover,
+.footer-links a:focus {
     opacity: 1;
     color: var(--color-accent);
 }
@@ -603,7 +617,8 @@ footer {
     transition: background-color 0.3s;
 }
 
-.social-link:hover, .social-link:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--color-accent);
 }
 
@@ -623,8 +638,15 @@ footer {
 
 /* Animaciones */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .fade-in {
@@ -787,7 +809,8 @@ label {
     font-weight: 500;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 0.75rem;
     border-radius: 5px;
@@ -798,7 +821,8 @@ input, textarea {
     font-family: var(--font-primary);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-color: var(--color-accent);
     box-shadow: 0 0 0 3px rgba(238, 155, 0, 0.3);
@@ -835,11 +859,11 @@ input:focus, textarea:focus {
     border-radius: 3px;
 }
 
-.checkbox-container:hover input ~ .checkmark {
+.checkbox-container:hover input~.checkmark {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.checkbox-container input:checked ~ .checkmark {
+.checkbox-container input:checked~.checkmark {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
 }
@@ -850,7 +874,7 @@ input:focus, textarea:focus {
     display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
     display: block;
 }
 
@@ -892,7 +916,8 @@ input:focus, textarea:focus {
     transition: all 0.3s;
 }
 
-.social-icon:hover, .social-icon:focus {
+.social-icon:hover,
+.social-icon:focus {
     background-color: var(--color-accent);
     transform: translateY(-3px);
 }
@@ -957,7 +982,8 @@ input:focus, textarea:focus {
     transition: opacity 0.3s;
 }
 
-.footer-links a:hover, .footer-links a:focus {
+.footer-links a:hover,
+.footer-links a:focus {
     opacity: 1;
     color: var(--color-accent);
 }
@@ -998,11 +1024,11 @@ input:focus, textarea:focus {
     .contact-container {
         flex-direction: column;
     }
-    
+
     .newsletter-form {
         width: 100%;
     }
-    
+
     .newsletter-form button {
         width: 100%;
         margin-top: 0.5rem;
