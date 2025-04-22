@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Entradas - Planetario de Madrid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/entradas.css">
+</head>
+
+<body>
+    <!-- Enlace para saltar a contenido principal (Accesibilidad) -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Cabecera y Navegación -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/api/placeholder/50/50" alt="Logo del Planetario de Madrid">
+                <div class="logo-text">
+                    <h1>Planetario de Madrid</h1>
+                    <p>Explora el Universo</p>
+                </div>
+            </a>
+
+            <div class="header-right">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="exposiciones.html">Exposiciones</a></li>
+                        <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <a href="entradas.html" class="btn btn-ticket">Comprar Entradas</a>
+
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Menú</span>
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <section class="tickets-section">
+            <div class="tickets-container">
+                <div class="tickets-intro">
+                    <h2>Compra tus entradas</h2>
+                    <p>Adquiere tus entradas para disfrutar de una experiencia única explorando los secretos del
+                        universo en el Planetario de Madrid.</p>
+                </div>
+
+                <!-- Selección de fecha y hora -->
+                <div class="date-selection">
+                    <h3>Selecciona fecha y hora</h3>
+
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <div class="calendar-controls">
+                                    <button aria-label="Mes anterior">◄</button>
+                                </div>
+                                <div class="calendar-month">Abril 2025</div>
+                                <div class="calendar-controls">
+                                    <button aria-label="Mes siguiente">►</button>
+                                </div>
+                            </div>
+
+                            <div class="calendar-grid">
+                                <div class="calendar-day-header">L</div>
+                                <div class="calendar-day-header">M</div>
+                                <div class="calendar-day-header">X</div>
+                                <div class="calendar-day-header">J</div>
+                                <div class="calendar-day-header">V</div>
+                                <div class="calendar-day-header">S</div>
+                                <div class="calendar-day-header">D</div>
+
+                                <div class="calendar-day unavailable">31</div>
+                                <div class="calendar-day available">1</div>
+                                <div class="calendar-day available">2</div>
+                                <div class="calendar-day available">3</div>
+                                <div class="calendar-day available">4</div>
+                                <div class="calendar-day available">5</div>
+                                <div class="calendar-day available">6</div>
+                                <div class="calendar-day unavailable">7</div>
+                                <div class="calendar-day available">8</div>
+                                <div class="calendar-day available">9</div>
+                                <div class="calendar-day available">10</div>
+                                <div class="calendar-day available">11</div>
+                                <div class="calendar-day available">12</div>
+                                <div class="calendar-day available">13</div>
+                                <div class="calendar-day unavailable">14</div>
+                                <div class="calendar-day available">15</div>
+                                <div class="calendar-day available">16</div>
+                                <div class="calendar-day available">17</div>
+                                <div class="calendar-day available">18</div>
+                                <div class="calendar-day available">19</div>
+                                <div class="calendar-day available">20</div>
+                                <div class="calendar-day unavailable">21</div>
+                                <div class="calendar-day selected">22</div>
+                                <div class="calendar-day available">23</div>
+                                <div class="calendar-day available">24</div>
+                                <div class="calendar-day available">25</div>
+                                <div class="calendar-day available">26</div>
+                                <div class="calendar-day available">27</div>
+                                <div class="calendar-day unavailable">28</div>
+                                <div class="calendar-day available">29</div>
+                                <div class="calendar-day available">30</div>
+                                <div class="calendar-day unavailable">1</div>
+                                <div class="calendar-day unavailable">2</div>
+                                <div class="calendar-day unavailable">3</div>
+                                <div class="calendar-day unavailable">4</div>
+                            </div>
+                        </div>
+
+                        <div class="time-selection">
+                            <h4>Horarios disponibles para el 22 de abril:</h4>
+                            <div class="time-slots">
+                                <div class="time-slot">10:00 h</div>
+                                <div class="time-slot">12:00 h</div>
+                                <div class="time-slot selected">16:00 h</div>
+                                <div class="time-slot">18:00 h</div>
+                                <div class="time-slot full">20:00 h</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selección de entradas -->
+                <div class="ticket-selection">
+                    <h3>Selecciona tus entradas</h3>
+
+                    <div class="ticket-types">
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <div class="ticket-name">Entrada General</div>
+                                <div class="ticket-description">Acceso a todas las exposiciones y una sesión de
+                                    proyección.</div>
+                            </div>
+                            <div class="ticket-price">8€</div>
+                            <div class="ticket-quantity">
+                                <button class="quantity-btn decrease" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" class="quantity-input" value="2" min="0" max="10"
+                                    aria-label="Cantidad">
+                                <button class="quantity-btn increase" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                        </div>
+
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <div class="ticket-name">Niños (5-12 años)</div>
+                                <div class="ticket-description">Acceso a todas las exposiciones y una sesión de
+                                    proyección.</div>
+                            </div>
+                            <div class="ticket-price">5€</div>
+                            <div class="ticket-quantity">
+                                <button class="quantity-btn decrease" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" class="quantity-input" value="1" min="0" max="10"
+                                    aria-label="Cantidad">
+                                <button class="quantity-btn increase" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                        </div>
+
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <div class="ticket-name">Estudiantes y Jubilados</div>
+                                <div class="ticket-description">Con carnet acreditativo válido. Acceso a exposiciones y
+                                    proyección.</div>
+                            </div>
+                            <div class="ticket-price">6€</div>
+                            <div class="ticket-quantity">
+                                <button class="quantity-btn decrease" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" max="10"
+                                    aria-label="Cantidad">
+                                <button class="quantity-btn increase" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                        </div>
+
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <div class="ticket-name">Grupos escolares</div>
+                                <div class="ticket-description">Mínimo 15 estudiantes. Incluye visita guiada. Reserva
+                                    con antelación.</div>
+                            </div>
+                            <div class="ticket-price">4€ por alumno</div>
+                            <div class="ticket-quantity">
+                                <button class="quantity-btn decrease" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" max="100"
+                                    aria-label="Cantidad">
+                                <button class="quantity-btn increase" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumen de la compra -->
+                <div class="order-summary">
+                    <h3>Resumen de tu compra</h3>
+
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <div class="item-name">2 × Entrada General</div>
+                            <div class="item-price">16,00 €</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="item-name">1 × Niños (5-12 años)</div>
+                            <div class="item-price">5,00 €</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="item-name">Gastos de gestión</div>
+                            <div class="item-price">1,50 €</div>
+                        </div>
+                    </div>
+
+                    <div class="summary-total">
+                        <div>Total</div>
+                        <div>22,50 €</div>
+                    </div>
+
+                    <a href="#" class="checkout-btn">Completar compra</a>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="additional-info">
+                    <h3>Información importante</h3>
+
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-icon">ℹ️</span>
+                            <span>Es necesario presentar el DNI o documento acreditativo para entradas con
+                                descuento.</span>
+                        </li>
+                        <li>
+                            <span class="info-icon">ℹ️</span>
+                            <span>Los lunes el planetario permanece cerrado.</span>
+                        </li>
+                        <li>
+                            <span class="info-icon">ℹ️</span>
+                            <span>Para grupos escolares es necesario reservar con al menos 7 días de antelación.</span>
+                        </li>
+                        <li>
+                            <span class="info-icon">ℹ️</span>
+                            <span>La entrada da derecho a una única sesión de proyección en la fecha y hora
+                                seleccionadas.</span>
+                        </li>
+                        <li>
+                            <span class="info-icon">ℹ️</span>
+                            <span>Niños menores de 5 años tienen entrada gratuita acompañados de un adulto.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Planetario de Madrid</h4>
+                <p>Un espacio dedicado a la divulgación de la astronomía y ciencias del espacio para toda la familia.
+                </p>
+                <p class="copyright">© 2025 Planetario de Madrid. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Enlaces rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Información legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir información sobre nuestras exposiciones y eventos.</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" name="newsletter-email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script>
+        // Script básico para la funcionalidad de la página de entradas
+        document.addEventListener('DOMContentLoaded', function () {
+            // Selectores
+            const calendarDays = document.querySelectorAll('.calendar-day.available');
+            const timeSlots = document.querySelectorAll('.time-slot:not(.full)');
+            const decreaseButtons = document.querySelectorAll('.quantity-btn.decrease');
+            const increaseButtons = document.querySelectorAll('.quantity-btn.increase');
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+
+            // Selección de fecha
+            calendarDays.forEach(day => {
+                day.addEventListener('click', function () {
+                    // Quitar selección actual
+                    document.querySelector('.calendar-day.selected')?.classList.remove('selected');
+                    // Añadir nueva selección
+                    this.classList.add('selected');
+                });
+            });
+
+            // Selección de hora
+            timeSlots.forEach(slot => {
+                slot.addEventListener('click', function () {
+                    // Quitar selección actual
+                    document.querySelector('.time-slot.selected')?.classList.remove('selected');
+                    // Añadir nueva selección
+                    this.classList.add('selected');
+                });
+            });
+
+            // Control de cantidad
+            decreaseButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const input = quantityInputs[index];
+                    const currentValue = parseInt(input.value);
+                    if (currentValue > 0) {
+                        input.value = currentValue - 1;
+                    }
+                });
+            });
+
+            increaseButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const input = quantityInputs[index];
+                    const currentValue = parseInt(input.value);
+                    const maxValue = parseInt(input.getAttribute('max'));
+                    if (currentValue < maxValue) {
+                        input.value = currentValue + 1;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

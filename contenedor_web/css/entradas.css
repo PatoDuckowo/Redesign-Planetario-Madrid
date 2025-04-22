@@ -1,0 +1,372 @@
+/* Estilos específicos para la página de entradas */
+
+.tickets-section {
+    padding: 4rem 5%;
+    background-color: var(--color-neutral);
+    color: var(--color-bg);
+}
+
+.tickets-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tickets-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tickets-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+}
+
+.tickets-intro p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Calendario y selección de fecha/hora */
+.date-selection {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+}
+
+.date-selection h3 {
+    margin-bottom: 1.5rem;
+    color: var(--color-brand);
+    font-size: 1.5rem;
+}
+
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.calendar {
+    flex: 1 1 300px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-month {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.calendar-controls button {
+    background: none;
+    border: none;
+    color: var(--color-brand);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.calendar-controls button:hover {
+    background-color: rgba(0, 95, 115, 0.1);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
+.calendar-day {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.calendar-day:hover {
+    background-color: rgba(0, 95, 115, 0.1);
+}
+
+.calendar-day.available {
+    font-weight: 500;
+}
+
+.calendar-day.selected {
+    background-color: var(--color-brand);
+    color: white;
+}
+
+.calendar-day.unavailable {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.time-selection {
+    flex: 1 1 300px;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.time-slot {
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 95, 115, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.time-slot:hover {
+    background-color: rgba(0, 95, 115, 0.1);
+}
+
+.time-slot.selected {
+    background-color: var(--color-brand);
+    color: white;
+    border-color: var(--color-brand);
+}
+
+.time-slot.full {
+    opacity: 0.3;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+/* Selección de entradas */
+.ticket-selection {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+}
+
+.ticket-selection h3 {
+    margin-bottom: 1.5rem;
+    color: var(--color-brand);
+    font-size: 1.5rem;
+}
+
+.ticket-types {
+    margin-bottom: 2rem;
+}
+
+.ticket-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ticket-type:last-child {
+    border-bottom: none;
+}
+
+.ticket-info {
+    flex: 1;
+}
+
+.ticket-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.ticket-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.ticket-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-brand);
+    margin: 0 1.5rem;
+}
+
+.ticket-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+.quantity-input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    padding: 0 0.5rem;
+    -moz-appearance: textfield;
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Resumen y total */
+.order-summary {
+    background-color: var(--color-bg);
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.order-summary h3 {
+    margin-bottom: 1.5rem;
+    color: var(--color-accent);
+    font-size: 1.5rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summary-item:last-of-type {
+    border-bottom: none;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-accent);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.checkout-btn:hover,
+.checkout-btn:focus {
+    background-color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Información adicional */
+.additional-info {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: rgba(0, 95, 115, 0.05);
+    border-radius: 10px;
+}
+
+.additional-info h3 {
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+}
+
+.info-icon {
+    color: var(--color-brand);
+    margin-right: 0.5rem;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .calendar-container {
+        flex-direction: column;
+    }
+
+    .ticket-type {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ticket-price {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .tickets-intro h2 {
+        font-size: 2rem;
+    }
+
+    .date-selection,
+    .ticket-selection,
+    .order-summary {
+        padding: 1.5rem;
+    }
+
+    .time-slots {
+        grid-template-columns: 1fr 1fr;
+    }
+}
