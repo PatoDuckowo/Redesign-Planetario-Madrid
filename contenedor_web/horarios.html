@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios y Tarifas - Planetario de Madrid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/horarios.css">
+</head>
+<body>
+    <!-- Enlace para saltar a contenido principal (Accesibilidad) -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Cabecera y Navegación -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/api/placeholder/50/50" alt="Logo del Planetario de Madrid">
+                <div class="logo-text">
+                    <h1>Planetario de Madrid</h1>
+                    <p>Explora el Universo</p>
+                </div>
+            </a>
+            
+            <div class="header-right">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="exposiciones.html">Exposiciones</a></li>
+                        <li><a href="horarios.html" class="active">Horarios y Tarifas</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="entradas.html" class="btn btn-ticket">Comprar Entradas</a>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Menú</span>
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero reducido para páginas internas -->
+    <section class="page-hero">
+        <div class="hero-image"></div>
+        <div class="hero-content fade-in">
+            <h2>Horarios y Tarifas</h2>
+            <p>Planifica tu visita al Planetario de Madrid</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <section class="horarios-section">
+            <div class="container">
+                <!-- Tabla de horarios -->
+                <div class="schedule-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Horario de apertura</h3>
+                    </div>
+                    
+                    <div class="card-content">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Horario</th>
+                                    <th>Observaciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Martes a Viernes</strong></td>
+                                    <td>09:30 - 20:00h</td>
+                                    <td>Última sesión a las 19:00h</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sábados y Domingos</strong></td>
+                                    <td>10:00 - 21:00h</td>
+                                    <td>Última sesión a las 20:00h</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lunes</strong></td>
+                                    <td>Cerrado</td>
+                                    <td>Cerrado por mantenimiento</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Festivos</strong></td>
+                                    <td>10:00 - 21:00h</td>
+                                    <td>Consultar fechas especiales</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="schedule-note">
+                            <p><strong>Nota:</strong> Durante los meses de julio y agosto el horario se amplía hasta las 22:00h los viernes y sábados con sesiones especiales de observación nocturna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horarios de proyecciones -->
+                <div class="schedule-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M15.5 12L10.5 15.5V8.5L15.5 12Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Horario de proyecciones</h3>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="projections-grid">
+                            <div class="projection-card">
+                                <h4>Martes a Viernes</h4>
+                                <ul class="projection-times">
+                                    <li>10:30h - <span class="projection-title">Viaje por el Cosmos</span></li>
+                                    <li>12:00h - <span class="projection-title">Explorando el Sistema Solar</span></li>
+                                    <li>13:30h - <span class="projection-title">Viaje por el Cosmos</span></li>
+                                    <li>16:00h - <span class="projection-title">Estrellas y Galaxias</span></li>
+                                    <li>17:30h - <span class="projection-title">Explorando el Sistema Solar</span></li>
+                                    <li>19:00h - <span class="projection-title">Misterios del Universo</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="projection-card">
+                                <h4>Fines de semana y festivos</h4>
+                                <ul class="projection-times">
+                                    <li>10:30h - <span class="projection-title">Aventuras Espaciales (infantil)</span></li>
+                                    <li>12:00h - <span class="projection-title">Explorando el Sistema Solar</span></li>
+                                    <li>13:30h - <span class="projection-title">Viaje por el Cosmos</span></li>
+                                    <li>16:00h - <span class="projection-title">Aventuras Espaciales (infantil)</span></li>
+                                    <li>17:30h - <span class="projection-title">Estrellas y Galaxias</span></li>
+                                    <li>19:00h - <span class="projection-title">Explorando el Sistema Solar</span></li>
+                                    <li>20:00h - <span class="projection-title">Misterios del Universo</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-note">
+                            <p><strong>Duración:</strong> Todas las proyecciones tienen una duración aproximada de 45 minutos.</p>
+                            <p><strong>Recomendación:</strong> Se aconseja llegar con 15 minutos de antelación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarifas -->
+                <div class="schedule-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                                <path d="M12.5 7H11V13L16.2 16.2L17 14.9L12.5 12.2V7Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Tarifas</h3>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Entrada General</h4>
+                                    <div class="pricing-price">8€</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p>Acceso a todas las exposiciones y una sesión de proyección.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Niños (5-12 años)</h4>
+                                    <div class="pricing-price">5€</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p>Acceso a todas las exposiciones y una sesión de proyección.</p>
+                                    <p>Menores de 5 años entrada gratuita acompañados de un adulto.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Estudiantes y Jubilados</h4>
+                                    <div class="pricing-price">6€</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p>Acceso a todas las exposiciones y una sesión de proyección.</p>
+                                    <p>Imprescindible presentar carnet acreditativo válido.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h4>Grupos escolares</h4>
+                                    <div class="pricing-price">4€</div>
+                                    <div class="pricing-subtitle">por alumno</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p>Mínimo 15 estudiantes.</p>
+                                    <p>Incluye visita guiada y material didáctico.</p>
+                                    <p>Reserva con al menos 7 días de antelación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-actions">
+                            <a href="entradas.html" class="btn btn-primary">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Descuentos y promociones -->
+                <div class="schedule-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Descuentos y promociones</h3>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="promotions-list">
+                            <div class="promotion-item">
+                                <div class="promotion-icon">🌟</div>
+                                <div class="promotion-content">
+                                    <h4>Bono Familiar</h4>
+                                    <p>2 adultos + 2 niños por 22€ (ahorro de 4€)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="promotion-item">
+                                <div class="promotion-icon">🎓</div>
+                                <div class="promotion-content">
+                                    <h4>Martes Educativos</h4>
+                                    <p>25% de descuento para estudiantes universitarios los martes presentando carnet válido.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="promotion-item">
+                                <div class="promotion-icon">🌙</div>
+                                <div class="promotion-content">
+                                    <h4>Noches Astronómicas</h4>
+                                    <p>Último viernes de cada mes: entrada + observación nocturna por 10€.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="promotion-item">
+                                <div class="promotion-icon">🎭</div>
+                                <div class="promotion-content">
+                                    <h4>Pase Cultural</h4>
+                                    <p>20% de descuento presentando entrada de museo o teatro de Madrid (válido 7 días).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de preguntas frecuentes -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Preguntas frecuentes</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>¿Es necesario reservar con antelación?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Para visitas individuales o en pequeños grupos no es imprescindible reservar, aunque se recomienda, especialmente en fines de semana y temporada alta. Para grupos escolares y visitas organizadas es obligatorio reservar con al menos 7 días de antelación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>¿Cuánto tiempo dura la visita completa?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Una visita completa, incluyendo todas las exposiciones y una proyección, dura aproximadamente 2 horas. Las proyecciones tienen una duración de 45 minutos, y se recomienda dedicar al menos 1 hora para recorrer las exposiciones.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>¿Hay algún día con entrada gratuita?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sí, el primer martes de cada mes la entrada es gratuita para todos los visitantes. Ten en cuenta que estos días suele haber mayor afluencia de público, por lo que se recomienda acudir temprano.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>¿El planetario es accesible para personas con movilidad reducida?</span>
+                            <svg class="accordion-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sí, todas las instalaciones del Planetario de Madrid son accesibles para personas con movilidad reducida. Contamos con rampas, ascensores y espacios reservados en la sala de proyección. Además, disponemos de servicios adaptados en todas las plantas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de cómo llegar -->
+        <section class="location-section">
+            <div class="container">
+                <h2>Cómo llegar</h2>
+                
+                <div class="location-content">
+                    <div class="location-map">
+                        <img src="/api/placeholder/600/400" alt="Mapa de ubicación del Planetario de Madrid">
+                    </div>
+                    
+                    <div class="location-info">
+                        <div class="location-item">
+                            <div class="location-icon">📍</div>
+                            <div class="location-text">
+                                <h4>Dirección</h4>
+                                <p>Avenida del Planetario, 16, 28045 Madrid</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <div class="location-icon">🚇</div>
+                            <div class="location-text">
+                                <h4>Metro</h4>
+                                <p>Línea 6: Méndez Álvaro (salida Planetario)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <div class="location-icon">🚌</div>
+                            <div class="location-text">
+                                <h4>Autobús</h4>
+                                <p>Líneas 8, 102, 148, 152, 156</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <div class="location-icon">🚗</div>
+                            <div class="location-text">
+                                <h4>Parking</h4>
+                                <p>Parking público junto al planetario (tarifa reducida para visitantes)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Planetario de Madrid</h4>
+                <p>Un espacio dedicado a la divulgación de la astronomía y ciencias del espacio para toda la familia.</p>
+                <p class="copyright">© 2025 Planetario de Madrid. Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Enlaces rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Información legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir información sobre nuestras exposiciones y eventos.</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" name="newsletter-email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script>
+        // Script para el acordeón de preguntas frecuentes
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    
+                    const content = this.nextElementSibling;
+                    if (expanded) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
