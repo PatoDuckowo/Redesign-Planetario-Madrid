@@ -1,35 +1,35 @@
 /* Estilos específicos para la página de entradas */
 
-.tickets-section {
+.seccion-entradas {
     padding: 4rem 5%;
     background-color: var(--color-neutral);
     color: var(--color-bg);
 }
 
-.tickets-container {
+.contenedor-entradas {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.tickets-intro {
+.intro-entradas {
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.tickets-intro h2 {
+.intro-entradas h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--color-brand);
 }
 
-.tickets-intro p {
+.intro-entradas p {
     max-width: 700px;
     margin: 0 auto 1.5rem;
     font-size: 1.1rem;
 }
 
 /* Calendario y selección de fecha/hora */
-.date-selection {
+.seleccion-fecha {
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
@@ -37,35 +37,35 @@
     margin-bottom: 2.5rem;
 }
 
-.date-selection h3 {
+.seleccion-fecha h3 {
     margin-bottom: 1.5rem;
     color: var(--color-brand);
     font-size: 1.5rem;
 }
 
-.calendar-container {
+.contenedor-calendario {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.calendar {
+.calendario {
     flex: 1 1 300px;
 }
 
-.calendar-header {
+.cabecera-calendario {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.calendar-month {
+.mes-calendario {
     font-weight: 600;
     font-size: 1.2rem;
 }
 
-.calendar-controls button {
+.cabecera-calendario button {
     background: none;
     border: none;
     color: var(--color-brand);
@@ -76,24 +76,24 @@
     transition: background-color 0.3s;
 }
 
-.calendar-controls button:hover {
+.cabecera-calendario button:hover {
     background-color: rgba(0, 95, 115, 0.1);
 }
 
-.calendar-grid {
+.cuadricula-calendario {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
 }
 
-.calendar-day-header {
+.dia-cabecera {
     text-align: center;
     font-weight: 600;
     padding: 0.5rem 0;
     font-size: 0.85rem;
 }
 
-.calendar-day {
+.dia-calendario {
     position: relative;
     height: 40px;
     display: flex;
@@ -104,35 +104,35 @@
     transition: all 0.3s;
 }
 
-.calendar-day:hover {
+.dia-calendario:hover {
     background-color: rgba(0, 95, 115, 0.1);
 }
 
-.calendar-day.available {
+.dia-calendario.disponible {
     font-weight: 500;
 }
 
-.calendar-day.selected {
+.dia-calendario.seleccionado {
     background-color: var(--color-brand);
     color: white;
 }
 
-.calendar-day.unavailable {
+.dia-calendario.no-disponible {
     opacity: 0.3;
     cursor: not-allowed;
 }
 
-.time-selection {
+.seleccion-hora {
     flex: 1 1 300px;
 }
 
-.time-slots {
+.franjas-horarias {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 1rem;
 }
 
-.time-slot {
+.franja-horaria {
     padding: 0.8rem;
     border: 1px solid rgba(0, 95, 115, 0.2);
     border-radius: 5px;
@@ -141,24 +141,24 @@
     transition: all 0.3s;
 }
 
-.time-slot:hover {
+.franja-horaria:hover {
     background-color: rgba(0, 95, 115, 0.1);
 }
 
-.time-slot.selected {
+.franja-horaria.seleccionado {
     background-color: var(--color-brand);
     color: white;
     border-color: var(--color-brand);
 }
 
-.time-slot.full {
+.franja-horaria.completo {
     opacity: 0.3;
     cursor: not-allowed;
     text-decoration: line-through;
 }
 
 /* Selección de entradas */
-.ticket-selection {
+.seleccion-entradas {
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
@@ -166,17 +166,17 @@
     margin-bottom: 2.5rem;
 }
 
-.ticket-selection h3 {
+.seleccion-entradas h3 {
     margin-bottom: 1.5rem;
     color: var(--color-brand);
     font-size: 1.5rem;
 }
 
-.ticket-types {
+.tipos-entradas {
     margin-bottom: 2rem;
 }
 
-.ticket-type {
+.tipo-entrada {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,38 +184,38 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.ticket-type:last-child {
+.tipo-entrada:last-child {
     border-bottom: none;
 }
 
-.ticket-info {
+.info-entrada {
     flex: 1;
 }
 
-.ticket-name {
+.nombre-entrada {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
 
-.ticket-description {
+.descripcion-entrada {
     font-size: 0.9rem;
     opacity: 0.8;
 }
 
-.ticket-price {
+.precio-entrada {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--color-brand);
     margin: 0 1.5rem;
 }
 
-.ticket-quantity {
+.cantidad-entrada {
     display: flex;
     align-items: center;
 }
 
-.quantity-btn {
+.boton-cantidad {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -229,13 +229,13 @@
     transition: all 0.3s;
 }
 
-.quantity-btn:hover {
+.boton-cantidad:hover {
     background-color: var(--color-accent);
     color: white;
     border-color: var(--color-accent);
 }
 
-.quantity-input {
+.entrada-cantidad {
     width: 40px;
     height: 30px;
     text-align: center;
@@ -246,14 +246,14 @@
     -moz-appearance: textfield;
 }
 
-.quantity-input::-webkit-outer-spin-button,
-.quantity-input::-webkit-inner-spin-button {
+.entrada-cantidad::-webkit-outer-spin-button,
+.entrada-cantidad::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 /* Resumen y total */
-.order-summary {
+.resumen-compra {
     background-color: var(--color-bg);
     color: white;
     border-radius: 10px;
@@ -261,24 +261,24 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.order-summary h3 {
+.resumen-compra h3 {
     margin-bottom: 1.5rem;
     color: var(--color-accent);
     font-size: 1.5rem;
 }
 
-.summary-item {
+.item-resumen {
     display: flex;
     justify-content: space-between;
     padding: 0.7rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.summary-item:last-of-type {
+.item-resumen:last-of-type {
     border-bottom: none;
 }
 
-.summary-total {
+.total-resumen {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
@@ -288,7 +288,7 @@
     font-weight: 700;
 }
 
-.checkout-btn {
+.boton-pagar {
     display: block;
     width: 100%;
     padding: 1rem;
@@ -304,36 +304,36 @@
     text-align: center;
 }
 
-.checkout-btn:hover,
-.checkout-btn:focus {
+.boton-pagar:hover,
+.boton-pagar:focus {
     background-color: var(--color-white);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Información adicional */
-.additional-info {
+.info-adicional {
     margin-top: 3rem;
     padding: 2rem;
     background-color: rgba(0, 95, 115, 0.05);
     border-radius: 10px;
 }
 
-.additional-info h3 {
+.info-adicional h3 {
     margin-bottom: 1rem;
     color: var(--color-brand);
 }
 
-.info-icon {
+.icono-info {
     color: var(--color-brand);
     margin-right: 0.5rem;
 }
 
-.info-list {
+.lista-info {
     list-style: none;
 }
 
-.info-list li {
+.lista-info li {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: flex-start;
@@ -341,32 +341,32 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .calendar-container {
+    .contenedor-calendario {
         flex-direction: column;
     }
 
-    .ticket-type {
+    .tipo-entrada {
         flex-direction: column;
         text-align: center;
     }
 
-    .ticket-price {
+    .precio-entrada {
         margin: 1rem 0;
     }
 }
 
 @media (max-width: 480px) {
-    .tickets-intro h2 {
+    .intro-entradas h2 {
         font-size: 2rem;
     }
 
-    .date-selection,
-    .ticket-selection,
-    .order-summary {
+    .seleccion-fecha,
+    .seleccion-entradas,
+    .resumen-compra {
         padding: 1.5rem;
     }
 
-    .time-slots {
+    .franjas-horarias {
         grid-template-columns: 1fr 1fr;
     }
 }
