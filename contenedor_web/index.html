@@ -15,7 +15,7 @@
     <!-- Cabecera y Navegación -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="/api/placeholder/50/50" alt="Logo del Planetario de Madrid">
                 <div class="logo-text">
                     <h1>Planetario de Madrid</h1>
@@ -23,20 +23,24 @@
                 </div>
             </a>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                <span class="sr-only">Menú</span>
-                ☰
-            </button>
+            <div class="header-right">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="exposiciones.html">Exposiciones</a></li>
+                        <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
 
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#exposiciones">Exposiciones</a></li>
-                    <li><a href="#horarios">Horarios y Tarifas</a></li>
-                    <li><a href="#actividades">Actividades</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+                <a href="entradas.html" class="btn btn-ticket">Comprar Entradas</a>
+
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Menú</span>
+                    ☰
+                </button>
+            </div>
         </div>
     </header>
 
