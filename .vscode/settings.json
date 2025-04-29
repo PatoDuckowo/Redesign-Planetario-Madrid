@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveShare.autoShareServers": true,
+    "liveShare.shareExternalPorts": true,
+    "liveShare.allowGuestTaskControl": true,
+    "liveShare.allowGuestDebugControl": true
+}

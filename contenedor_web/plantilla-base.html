@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetario de Madrid - Explora el Universo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Añadir CSS específico de la página aquí -->
+</head>
+<body>
+    <!-- Enlace para accesibilidad -->
+    <a href="#contenido-principal" class="enlace-saltar">Saltar al contenido principal</a>
+
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo del Planetario de Madrid">
+                <div class="texto-logo">
+                    <h1>Planetario de Madrid</h1>
+                    <p>Explora el Universo</p>
+                </div>
+            </a>
+            
+            <div class="cabecera-derecha">
+                <nav id="navegacion-principal" class="navegacion-principal">
+                    <ul>
+                        <li><a href="index.html" class="activo">Inicio</a></li>
+                        <li><a href="exposiciones.html">Exposiciones</a></li>
+                        <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="entradas.html" class="boton boton-entrada">Comprar Entradas</a>
+                
+                <button class="alternador-nav" aria-expanded="false" aria-controls="navegacion-principal">
+                    <span class="solo-lectura">Menú</span>
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="contenido-principal">
+        <!-- Contenido específico de cada página irá aquí -->
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <h4>Planetario de Madrid</h4>
+                <p>Un espacio dedicado a la divulgación de la astronomía y ciencias del espacio para toda la familia.</p>
+                <p class="copyright">© 2025 Planetario de Madrid. Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="columna-pie">
+                <h4>Enlaces rápidos</h4>
+                <ul class="enlaces-pie">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="columna-pie">
+                <h4>Información legal</h4>
+                <ul class="enlaces-pie">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="columna-pie">
+                <h4>Boletín</h4>
+                <p>Suscríbete para recibir información sobre nuestras exposiciones y eventos.</p>
+                <form action="#" method="POST" class="formulario-boletin">
+                    <input type="email" name="email-boletin" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="boton boton-secundario">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
