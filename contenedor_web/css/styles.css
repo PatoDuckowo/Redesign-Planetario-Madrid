@@ -98,7 +98,7 @@ body::before {
     color: var(--color-bg);
     border: 2px solid var(--color-accent);
     padding: 0.6rem 1.2rem;
-    border-radius: 50px;
+    border-radius: 35px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s;
