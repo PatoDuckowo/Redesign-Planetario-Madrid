@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposiciones - Planetario de Madrid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/exposiciones.css" </head>
+
+<body>
+    <!-- Enlace para saltar a contenido principal (Accesibilidad) -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Cabecera y Navegación -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/api/placeholder/50/50" alt="Logo del Planetario de Madrid">
+                <div class="logo-text">
+                    <h1>Planetario de Madrid</h1>
+                    <p>Explora el Universo</p>
+                </div>
+            </a>
+
+            <div class="header-right">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="exposiciones.html" class="active">Exposiciones</a></li>
+                        <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <a href="entradas.html" class="btn btn-ticket">Comprar Entradas</a>
+
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Menú</span>
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero para la página de exposiciones -->
+    <section class="page-hero">
+        <div class="hero-image"></div>
+        <div class="hero-content fade-in">
+            <h2>Nuestras Exposiciones</h2>
+            <p>Descubre las maravillas del espacio a través de experiencias interactivas y fascinantes</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Exposiciones permanentes -->
+        <section class="exhibitions-section permanent">
+            <div class="container">
+                <h2>Exposiciones Permanentes</h2>
+                <p class="section-description">Estas exposiciones forman parte de nuestra colección principal y están
+                    disponibles durante todo el año.</p>
+
+                <div class="exhibitions-grid">
+                    <!-- Exposición El Sistema Solar -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición del Sistema Solar">
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>El Sistema Solar</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Principal</span>
+                                <span class="meta-item"><i class="icon">⏱️</i> 45 min. recomendados</span>
+                            </div>
+                            <p class="exhibition-description">Un recorrido fascinante por los planetas, lunas y otros
+                                cuerpos celestes que conforman nuestro sistema planetario. Descubre las características
+                                únicas de cada planeta y comprende la magnitud y complejidad de nuestro entorno espacial
+                                más cercano.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Modelos 3D</span>
+                                <span class="feature-tag">Paneles interactivos</span>
+                                <span class="feature-tag">Muestras de meteoritos</span>
+                                <span class="feature-tag">Para todas las edades</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Exposición Viaje a las Estrellas -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición Viaje a las Estrellas">
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>Viaje a las Estrellas</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Este</span>
+                                <span class="meta-item"><i class="icon">⏱️</i> 40 min. recomendados</span>
+                            </div>
+                            <p class="exhibition-description">Descubre las constelaciones, nebulosas y galaxias que
+                                pueblan nuestro universo. Una exposición que te transportará a través del espacio y el
+                                tiempo para entender la evolución estelar y los fascinantes objetos que habitan el
+                                cosmos.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Proyecciones</span>
+                                <span class="feature-tag">Mapa estelar interactivo</span>
+                                <span class="feature-tag">Espectrógrafo</span>
+                                <span class="feature-tag">Para adultos y jóvenes</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Exposición Exploración Espacial -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición Exploración Espacial">
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>Exploración Espacial</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Oeste</span>
+                                <span class="meta-item"><i class="icon">⏱️</i> 30 min. recomendados</span>
+                            </div>
+                            <p class="exhibition-description">Conoce la historia y los logros de la exploración espacial
+                                humana, desde los primeros satélites hasta las misiones actuales. Réplicas de naves
+                                espaciales, instrumentos científicos y equipos de astronautas te permitirán vivir la
+                                emoción de la conquista del espacio.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Réplicas</span>
+                                <span class="feature-tag">Vídeos históricos</span>
+                                <span class="feature-tag">Maquetas</span>
+                                <span class="feature-tag">Experiencia VR</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Exposición Astronomía para Pequeños Exploradores -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición Astronomía para Pequeños Exploradores">
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>Astronomía para Pequeños Exploradores</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Infantil</span>
+                                <span class="meta-item"><i class="icon">⏱️</i> 35 min. recomendados</span>
+                            </div>
+                            <p class="exhibition-description">Una exposición diseñada específicamente para niños de 4 a
+                                10 años donde podrán aprender los conceptos básicos de la astronomía de forma divertida
+                                e interactiva. Incluye zona de juegos educativos y actividades prácticas.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Interactiva</span>
+                                <span class="feature-tag">Juegos educativos</span>
+                                <span class="feature-tag">Actividades manuales</span>
+                                <span class="feature-tag">Para niños</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exposiciones temporales -->
+        <section class="exhibitions-section temporary">
+            <div class="container">
+                <h2>Exposiciones Temporales</h2>
+                <p class="section-description">Descubre nuestras exposiciones especiales disponibles por tiempo
+                    limitado.</p>
+
+                <div class="exhibitions-grid">
+                    <!-- Exposición temporal: Marte - El Planeta Rojo -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición Marte - El Planeta Rojo">
+                            <div class="exhibition-badge">Novedad</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>Marte: El Planeta Rojo</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Temporal 1</span>
+                                <span class="meta-item"><i class="icon">📅</i> Hasta el 30 de junio</span>
+                            </div>
+                            <p class="exhibition-description">Una exposición completa sobre el planeta Marte, sus
+                                características geológicas y la búsqueda de vida. Incluye resultados de las últimas
+                                misiones e información sobre los proyectos de colonización futura.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Maqueta topográfica</span>
+                                <span class="feature-tag">Realidad aumentada</span>
+                                <span class="feature-tag">Imágenes rover</span>
+                                <span class="feature-tag">Simulador de gravedad</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Exposición temporal: Colisiones Cósmicas -->
+                    <article class="exhibition-item">
+                        <div class="exhibition-image">
+                            <img src="/api/placeholder/600/400" alt="Exposición Colisiones Cósmicas">
+                            <div class="exhibition-badge">Última semana</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h3>Colisiones Cósmicas</h3>
+                            <div class="exhibition-meta">
+                                <span class="meta-item"><i class="icon">📍</i> Sala Temporal 2</span>
+                                <span class="meta-item"><i class="icon">📅</i> Hasta el 15 de mayo</span>
+                            </div>
+                            <p class="exhibition-description">Explora el impacto de los meteoritos y asteroides en la
+                                evolución de los planetas y la vida en la Tierra. Una muestra excepcional de meteoritos
+                                reales y simulaciones de impactos cósmicos.</p>
+                            <div class="exhibition-features">
+                                <span class="feature-tag">Colección de meteoritos</span>
+                                <span class="feature-tag">Simulación de impactos</span>
+                                <span class="feature-tag">Proyección inmersiva</span>
+                                <span class="feature-tag">Visitas guiadas</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Más información</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Próximas exposiciones -->
+        <section class="exhibitions-section upcoming">
+            <div class="container">
+                <h2>Próximas Exposiciones</h2>
+                <p class="section-description">Adelanto de las exposiciones que estamos preparando para los próximos
+                    meses.</p>
+
+                <div class="upcoming-grid">
+                    <article class="upcoming-item">
+                        <div class="upcoming-image">
+                            <img src="/api/placeholder/500/300" alt="Próxima exposición: Exoplanetas">
+                        </div>
+                        <div class="upcoming-content">
+                            <h3>Exoplanetas: Mundos Lejanos</h3>
+                            <div class="upcoming-date">A partir del 15 de julio</div>
+                            <p>Descubrimiento y exploración de planetas fuera de nuestro sistema solar. ¿Hay vida en
+                                otros mundos?</p>
+                        </div>
+                    </article>
+
+                    <article class="upcoming-item">
+                        <div class="upcoming-image">
+                            <img src="/api/placeholder/500/300" alt="Próxima exposición: Agujeros Negros">
+                        </div>
+                        <div class="upcoming-content">
+                            <h3>Agujeros Negros: El Abismo del Espacio</h3>
+                            <div class="upcoming-date">A partir del 10 de septiembre</div>
+                            <p>Una inmersión en los objetos más extremos del universo y sus fascinantes propiedades.</p>
+                        </div>
+                    </article>
+
+                    <article class="upcoming-item">
+                        <div class="upcoming-image">
+                            <img src="/api/placeholder/500/300" alt="Próxima exposición: La Mujer en la Astronomía">
+                        </div>
+                        <div class="upcoming-content">
+                            <h3>Estrellas Ocultas: La Mujer en la Astronomía</h3>
+                            <div class="upcoming-date">A partir del 5 de octubre</div>
+                            <p>Homenaje a las mujeres científicas que cambiaron nuestra comprensión del universo.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecciones en el domo -->
+        <section class="dome-projections">
+            <div class="container">
+                <h2>Proyecciones en el Domo</h2>
+                <p class="section-description">Experiencias inmersivas de alta definición en nuestro domo de proyección
+                    de 360°.</p>
+
+                <div class="projections-slider">
+                    <div class="projection-slide">
+                        <div class="projection-image">
+                            <img src="/api/placeholder/800/450" alt="Proyección: Viaje por el Cosmos">
+                        </div>
+                        <div class="projection-info">
+                            <h3>Viaje por el Cosmos</h3>
+                            <div class="projection-details">
+                                <span><i class="icon">⏱️</i> 45 minutos</span>
+                                <span><i class="icon">👪</i> Para todos los públicos</span>
+                            </div>
+                            <p>Un impresionante viaje por el universo conocido, desde nuestro sistema solar hasta los
+                                confines de la galaxia. Una experiencia visual cautivadora narrada por expertos
+                                astrónomos.</p>
+                            <a href="#" class="btn btn-primary">Ver horarios</a>
+                        </div>
+                    </div>
+
+                    <div class="projection-slide">
+                        <div class="projection-image">
+                            <img src="/api/placeholder/800/450" alt="Proyección: Explorando el Sistema Solar">
+                        </div>
+                        <div class="projection-info">
+                            <h3>Explorando el Sistema Solar</h3>
+                            <div class="projection-details">
+                                <span><i class="icon">⏱️</i> 40 minutos</span>
+                                <span><i class="icon">👪</i> Para familias con niños</span>
+                            </div>
+                            <p>Un recorrido por los planetas de nuestro sistema solar, sus lunas y características
+                                especiales. Ideal para familias con niños que quieran aprender sobre nuestros vecinos
+                                planetarios.</p>
+                            <a href="#" class="btn btn-primary">Ver horarios</a>
+                        </div>
+                    </div>
+
+                    <div class="projection-slide">
+                        <div class="projection-image">
+                            <img src="/api/placeholder/800/450" alt="Proyección: Misterios del Universo">
+                        </div>
+                        <div class="projection-info">
+                            <h3>Misterios del Universo</h3>
+                            <div class="projection-details">
+                                <span><i class="icon">⏱️</i> 50 minutos</span>
+                                <span><i class="icon">👪</i> Recomendado +12 años</span>
+                            </div>
+                            <p>Una exploración de los fenómenos más misteriosos y extremos del cosmos: agujeros negros,
+                                estrellas de neutrones, materia oscura y energía oscura. Una proyección para mentes
+                                curiosas.</p>
+                            <a href="#" class="btn btn-primary">Ver horarios</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-nav">
+                    <button class="slider-dot active" aria-label="Ver proyección 1"></button>
+                    <button class="slider-dot" aria-label="Ver proyección 2"></button>
+                    <button class="slider-dot" aria-label="Ver proyección 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>Opiniones de visitantes</h2>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Una experiencia fascinante para toda la familia. Mi hijo de 7 años
+                            quedó maravillado con la proyección del Sistema Solar y no ha dejado de hablar sobre
+                            planetas desde entonces."</p>
+                        <div class="testimonial-author">Ana G., visitó con su familia</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Las exposiciones están muy bien explicadas y los guías son expertos
+                            en la materia. Aprendí muchísimo sobre astronomía en una sola visita."</p>
+                        <div class="testimonial-author">Carlos M., estudiante universitario</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★☆</div>
+                        <p class="testimonial-text">"La proyección en el domo es impresionante, te sientes realmente
+                            inmerso en el espacio. Muy recomendable para cualquier amante de la astronomía."</p>
+                        <div class="testimonial-author">Elena R., aficionada a la astronomía</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner de llamada a la acción -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Listo para explorar el universo?</h2>
+                    <p>Planifica tu visita al Planetario de Madrid y vive una experiencia inolvidable.</p>
+                    <div class="cta-buttons">
+                        <a href="entradas.html" class="btn btn-primary">Comprar entradas</a>
+                        <a href="horarios.html" class="btn btn-secondary">Ver horarios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Planetario de Madrid</h4>
+                <p>Un espacio dedicado a la divulgación de la astronomía y ciencias del espacio para toda la familia.
+                </p>
+                <p class="copyright">© 2025 Planetario de Madrid. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Enlaces rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="horarios.html">Horarios y Tarifas</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Información legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir información sobre nuestras exposiciones y eventos.</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" name="newsletter-email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script>
+        // Script para el slider de proyecciones
+        document.addEventListener('DOMContentLoaded', function () {
+            const dots = document.querySelectorAll('.slider-dot');
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function () {
+                    // Quitar clase active de todos los dots
+                    document.querySelector('.slider-dot.active').classList.remove('active');
+                    // Añadir clase active al dot seleccionado
+                    this.classList.add('active');
+
+                    // Actualizar slider (en una implementación real habría más código aquí)
+                    const slides = document.querySelectorAll('.projection-slide');
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.style.display = 'flex';
+                        } else {
+                            slide.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Mostrar solo la primera diapositiva al cargar
+            const slides = document.querySelectorAll('.projection-slide');
+            slides.forEach((slide, i) => {
+                if (i === 0) {
+                    slide.style.display = 'flex';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

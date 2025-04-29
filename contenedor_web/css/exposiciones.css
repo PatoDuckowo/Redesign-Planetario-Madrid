@@ -1,0 +1,523 @@
+/* Estilos para la página de exposiciones */
+
+/* Hero reducido para páginas internas */
+.page-hero {
+    position: relative;
+    height: 40vh;
+    max-height: 400px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.page-hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.page-hero .hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Secciones */
+.exhibitions-section {
+    padding: 5rem 0;
+}
+
+.permanent {
+    background-color: var(--color-neutral);
+    color: var(--color-bg);
+}
+
+.temporary {
+    background: linear-gradient(180deg, var(--color-neutral) 0%, #f0f0f0 100%);
+    color: var(--color-bg);
+}
+
+.upcoming {
+    background-color: #f0f0f0;
+    color: var(--color-bg);
+    padding-bottom: 7rem;
+}
+
+/* Títulos de sección */
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--color-accent);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Grid de exposiciones */
+.exhibitions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Elementos de exposición */
+.exhibition-item {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exhibition-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.exhibition-image {
+    flex: 0 0 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.exhibition-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.exhibition-item:hover .exhibition-image img {
+    transform: scale(1.05);
+}
+
+.exhibition-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exhibition-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibition-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-brand);
+}
+
+.exhibition-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+}
+
+.meta-item .icon {
+    margin-right: 0.5rem;
+}
+
+.exhibition-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.exhibition-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    background-color: rgba(0, 95, 115, 0.1);
+    color: var(--color-brand);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Próximas exposiciones */
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.upcoming-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.upcoming-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-image {
+    overflow: hidden;
+    height: 200px;
+}
+
+.upcoming-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.upcoming-item:hover .upcoming-image img {
+    transform: scale(1.05);
+}
+
+.upcoming-content {
+    padding: 1.5rem;
+}
+
+.upcoming-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-brand);
+}
+
+.upcoming-date {
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.upcoming-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Proyecciones en el Domo */
+.dome-projections {
+    background: linear-gradient(180deg, #f0f0f0 0%, var(--color-neutral) 100%);
+    color: var(--color-bg);
+    padding: 5rem 0;
+}
+
+.projections-slider {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.projection-slide {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.projection-image {
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.projection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projection-info {
+    flex: 1;
+    padding: 2rem;
+}
+
+.projection-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+}
+
+.projection-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.projection-details span {
+    display: flex;
+    align-items: center;
+}
+
+.projection-details .icon {
+    margin-right: 0.5rem;
+}
+
+.projection-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 95, 115, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-dot.active {
+    background-color: var(--color-brand);
+    transform: scale(1.2);
+}
+
+.slider-dot:hover {
+    background-color: var(--color-brand);
+}
+
+/* Testimonios */
+.testimonials-section {
+    background-color: var(--color-neutral);
+    color: var(--color-bg);
+    padding: 5rem 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-stars {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--color-brand);
+}
+
+/* Banner de llamada a la acción */
+.cta-banner {
+    background: linear-gradient(to right, rgba(11, 61, 145, 0.9), rgba(0, 95, 115, 0.9)), url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.cta-content h2::after {
+    background: var(--color-accent);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .exhibition-item {
+        flex-direction: column;
+    }
+
+    .exhibition-image {
+        flex: 0 0 300px;
+    }
+
+    .projection-slide {
+        flex-direction: column;
+    }
+
+    .projection-image {
+        flex: 0 0 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h2 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .exhibition-item {
+        flex-direction: column;
+    }
+
+    .exhibition-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-hero h2 {
+        font-size: 2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    .exhibition-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .exhibition-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mejoras para accesibilidad */
+.btn:focus,
+.slider-dot:focus {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* Botón activo en el menú */
+nav a.active {
+    color: var(--color-accent);
+}
+
+nav a.active::after {
+    width: 100%;
+}
