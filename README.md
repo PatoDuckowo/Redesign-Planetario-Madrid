@@ -3,7 +3,7 @@ Objetivo rediseñar la pagina web del planetario de madrid.
 <h1 align="center">Hi 👋 Somos jovenes estudiantes!</h1>
 <h3 align="center">Estamos dispuestos a enseñar todo lo que sabemos y aquí dejamos las pruebas de ello.</h3>
 
-<h3 align="left">Connect with me:</h3>
+
 <p align="left">
 </p>
 
