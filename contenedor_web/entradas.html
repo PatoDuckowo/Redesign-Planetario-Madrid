@@ -297,58 +297,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Selectores
-            const diasCalendario = document.querySelectorAll('.dia-calendario.disponible');
-            const franjasHorarias = document.querySelectorAll('.franja-horaria:not(.completo)');
-            const botonesDimensionar = document.querySelectorAll('.boton-cantidad.disminuir');
-            const botonesAumentar = document.querySelectorAll('.boton-cantidad.aumentar');
-            const entradaCantidad = document.querySelectorAll('.entrada-cantidad');
-
-            // Selección de fecha
-            diasCalendario.forEach(dia => {
-                dia.addEventListener('click', function () {
-                    // Quitar selección actual
-                    document.querySelector('.dia-calendario.seleccionado')?.classList.remove('seleccionado');
-                    // Añadir nueva selección
-                    this.classList.add('seleccionado');
-                });
-            });
-
-            // Selección de hora
-            franjasHorarias.forEach(franja => {
-                franja.addEventListener('click', function () {
-                    // Quitar selección actual
-                    document.querySelector('.franja-horaria.seleccionado')?.classList.remove('seleccionado');
-                    // Añadir nueva selección
-                    this.classList.add('seleccionado');
-                });
-            });
-
-            // Control de cantidad
-            botonesDimensionar.forEach((boton, indice) => {
-                boton.addEventListener('click', function () {
-                    const entrada = entradaCantidad[indice];
-                    const valorActual = parseInt(entrada.value);
-                    if (valorActual > 0) {
-                        entrada.value = valorActual - 1;
-                    }
-                });
-            });
-
-            botonesAumentar.forEach((boton, indice) => {
-                boton.addEventListener('click', function () {
-                    const entrada = entradaCantidad[indice];
-                    const valorActual = parseInt(entrada.value);
-                    const valorMaximo = parseInt(entrada.getAttribute('max'));
-                    if (valorActual < valorMaximo) {
-                        entrada.value = valorActual + 1;
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="js/entradas.js"></script>
 </body>
 
 </html>
